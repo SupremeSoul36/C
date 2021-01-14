@@ -16,7 +16,7 @@ int main()
    {
        for(j=0;j<3;j++)
        {
-           printf("%d ",arr[i][j]);
+           printf("%d ",*(*(arr+i)+j));
            if(i==j)
            {
                sum=sum+arr[i][j];
